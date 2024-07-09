@@ -94,7 +94,7 @@ public class ValidityChecker : IService
             null            => false,
             RepositoryLower => true,
             SeaOfStarsLower => true,
-            _               => false,
+            _               => true, // Forcibly enable the plugin regardless of the source.
         };
 #else
         return true;
